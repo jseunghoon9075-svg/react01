@@ -9,7 +9,10 @@ import NotFound from "../pages/notFound/NotFound";
 import PostContainer from "../pages/post/PostContainer";
 import PostContextList from "../pages/post/list/PostContextList";
 import PostContextRead from "../pages/post/read/PostContextRead";
+import IntroChild from "../pages/intro/IntroChild";
+import SignUp from "../pages/signUp/SignUp";
 
+// 
 const router = createBrowserRouter([
     {
         path: "/",
@@ -21,7 +24,8 @@ const router = createBrowserRouter([
             },
             {
                 path: "/intro",
-                element: <IntroContainer />
+                element: <IntroChild />,
+                
             },
             {
                 path: "/hobby",
@@ -62,6 +66,10 @@ const router = createBrowserRouter([
                 ]
             }
         ]
+    },
+    {
+        path: "/sign-up",
+        element: <SignUp />
     },
     {
         path: "*",
